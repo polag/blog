@@ -53,12 +53,12 @@ class Comment{
 
         if ($query->affected_rows === 0) {
             error_log('Errore MySQL: ' . $query->error_list[0]['error']);
-            header('Location: https://localhost/blog/index.php?stato=ko');
+            header('Location: https://localhost/biblioteca/index.php?stato=ko');
             exit;
         }
 
 
-        header('Location: https://localhost/blog/post-view.php?stato=ok&comment=1&id='.$id);
+        header('Location: https://localhost/biblioteca/post-view.php?stato=ok&comment=1&id='.$id);
         exit;
 
 
@@ -79,12 +79,12 @@ class Comment{
 
         if ($query->affected_rows === 0) {
             error_log('Errore MySQL: ' . $query->error_list[0]['error']);
-            header('Location: https://localhost/blog/post-view.php?stato=ko');
+            header('Location: https://localhost/biblioteca/post-view.php?stato=ko');
             exit;
         }
 
 
-        header('Location: https://localhost/blog/post-view.php?stato=ok&comment=1&id='.$postId);
+        header('Location: https://localhost/biblioteca/post-view.php?stato=ok&comment=1&id='.$postId);
         exit;
 
 

@@ -13,7 +13,7 @@ require_once __DIR__ . '/includes/util.php';
             \DataHandle\Utils\show_alert('login', $_GET['statologin']);
         }
         ?>
-        <form action="includes/login.php" method="POST" class="container">
+        <form action="./includes/login.php" method="POST" class="container">
             <div class="col">
                 <label for="username" class="form-label">Username</label>
                 <input type="text" name="username" id="username" class="form-control" required>
@@ -35,14 +35,14 @@ require_once __DIR__ . '/includes/util.php';
             \DataHandle\Utils\show_alert('registration', $_GET['statoreg']);
         }
         ?>
-        <form action="includes/registration.php" method="POST" class="container">
+        <form action="./includes/registration.php" method="POST" class="container">
             <div class="row">
                 <div class="col">
-                    <label for="firstname" class="form-label">First Name</label>
+                    <label for="firstname" class="form-label">Nome</label>
                     <input type="text" name="firstname" id="firstname" class="form-control" required>
                 </div>
                 <div class="col">
-                    <label for="lastname" class="form-label">Last Name</label>
+                    <label for="lastname" class="form-label">Cognome</label>
                     <input type="text" name="lastname" id="lastname" class="form-control" required>
 
                 </div>
@@ -53,15 +53,22 @@ require_once __DIR__ . '/includes/util.php';
                     <input type="text" name="username" id="username" class="form-control" required>
                 </div>
                 <div class="col">
-                    <label for="phone" class="form-label">Phone Number</label>
+                    <label for="phone" class="form-label">Telefono</label>
                     <input type="text" name="phone" id="phone" class="form-control" required>
                 </div>
             </div>
             <div class="col">
-                <label for="email" class="form-label">E-mail Address</label>
+                <label for="email" class="form-label">E-mail</label>
                 <input type="text" name="email" id="email" class="form-control" required>
 
             </div>
+            <div class="row">
+            <div class="col">
+                <label for="codice" class="form-label">Codice Fiscale</label>
+                <input type="text" name="codice" id="codice" class="form-control" required>
+
+            </div>
+            </div>   
             <div class="row">
                 <div class="col">
                     <label for="password" class="form-label">Password</label>

@@ -59,7 +59,7 @@ if (isset($_GET['stato'])) {
     <?php if (count($posts) > 1) : ?>
         <a href="./includes/manage-post.php?delete=2" class="btn btn-dark">Delete all posts</a>
     <?php elseif (count($posts) == 0) : ?>
-        <p>You haven't created any posts yet. Do you wish to <a href="/blog/create-post.php">create a new one?</a></p>
+        <p> Non ci sono libri. Vuoi <a href="/biblioteca/insert-book.php">inserire uno?</a></p>
 
 
     <?php endif; ?>

@@ -13,7 +13,7 @@ $post = \DataHandle\Posts::selectPost($id, $userId);
 ?>
 <div class="post-create">
     <h2>Edit post</h2>
-    <form action="/blog/includes/manage-post.php?id=<?php echo $id;?>&update=1" method="POST" >
+    <form action="/biblioteca/includes/manage-post.php?id=<?php echo $id;?>&update=1" method="POST" >
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
             <input type="text" name="title" class="form-control" value="<?php echo $post['title'];?>"  autocomplete="off" required>

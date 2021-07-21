@@ -64,13 +64,13 @@ $quantity = \DataHandle\Comment::countComments($id)['quantity'];
 
                 <div class="row comments">
                     <div class="col-1">
-                        <a href="/blog/profile.php?userId=<?php echo $comment['user_id']; ?>" class="comment-author"><?php echo $comment['username']; ?></a>
+                        <a href="/biblioteca/profile.php?userId=<?php echo $comment['user_id']; ?>" class="comment-author"><?php echo $comment['username']; ?></a>
                         <img class="comment-img" src="<?php echo $comment['image'] ?>" alt="user">
                     </div>
                     <div class="col-4">
                         <p class="comment-content"><?php echo $comment['content'] ?>
                         <?php if ($_SESSION['userId'] == $comment['user_id']) : ?>
-                            <a href="/blog/includes/delete-comment.php?id=<?php echo $comment['id']; ?>&postId=<?php echo $id; ?>"><i class="far fa-trash-alt"></i></a>
+                            <a href="/biblioteca/includes/delete-comment.php?id=<?php echo $comment['id']; ?>&postId=<?php echo $id; ?>"><i class="far fa-trash-alt"></i></a>
                         <?php endif; ?>
                         </p>
                     </div>
